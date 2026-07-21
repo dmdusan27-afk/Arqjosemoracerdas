@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Adobe Fonts: FORMA DJR -->
+    <link rel="stylesheet" href="https://use.typekit.net/wwm4fol.css">
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- AOS Animations -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>Arq. José Mora Cerdas | Portafolio Profesional</title>
+</head>
+
+<body>
+
+<!-- PRELOADER TÉCNICO CON LOGO JMC -->
+<div id="preloader">
+    <div class="logo-jmc-plano">
+        <span class="trazo trazo-1"></span>
+        <span class="trazo trazo-2"></span>
+        <span class="trazo trazo-3"></span>
+        <span class="trazo trazo-4"></span>
+
+        <div class="logo-preloader">
+            <img src="img/Recurso 8PRESENTACION2.png" alt="Logo JMC">
+        </div>
+    </div>
+</div>
+
+
+<!-- HEADER -->
+<header class="header d-flex justify-content-between align-items-center" data-aos="fade-down">
+    <div class="logo">
+        <img src="img/Recurso 7LOGO2.png" alt="Logo JMC">
+    </div>
+
+    <nav class="nav" id="nav">
+        <a href="index.html#inicio">Inicio</a>
+        <a href="sobremi.html">Sobre mí</a>
+        <a href="Servicios.html">Servicios</a>
+        <a href="index.html#portafolio">Portafolio</a>
+        <a href="index.html#contacto">Contacto</a>
+
+        <div class="search-box">
+            <input type="text" class="search-input" placeholder="Buscar">
+        </div>
+    </nav>
+
+    <button class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+</header>
+
+
+
+<!-- PORTADA DEL ARQUITECTO -->
+<section id="portada-arquitecto" class="portada-arquitecto" data-aos="fade-up">
+
+    <!-- Imagen de fondo -->
+    <img src="img/AdobeStock_636381202.jpeg" alt="Arquitectura" class="portada-img">
+
+    <div class="portada-overlay"></div>
+
+    <div class="portada-contenido">
+        <h2 class="cad-reveal">José Mora Cerdas</h2>
+
+        <p class="cad-reveal">
+            Arquitecto costarricense con más de 10 años de experiencia en diseño, supervisión y consultoría técnica.
+        </p>
+
+<a href="sobremi.html" class="btn-galeria">
+    Ver trayectoria
+    <span></span>
+    <span></span>
+</a>
+
+
+
+    </div>
+
+</section>
+
+
+
+<!-- INICIO: Sección Galería -->
+<section id="galeria" class="galeria-section">
+  <div class="section-line"></div>
+
+  <!-- Título igual a Portafolio, sin cuadro negro -->
+  <h2 class="titulo-arquitectonico">GALERÍA</h2>
+
+  <div class="grid-proyectos" aria-live="polite">
+
+    <!-- Proyecto 1 -->
+    <article class="proyecto-card" data-category="residencial" data-aos="fade-up">
+      <figure class="thumb">
+        <img src="img/AdobeStock_303066372.jpeg"
+             alt="Fachada proyecto residencial - Residencia Los Robles"
+             loading="lazy" width="1200" height="800">
+      </figure>
+      <div class="meta">
+        <h3 id="g1-title">Residencia Los Robles</h3>
+        <p class="meta-line">2023 · San José · <strong>Diseño y Supervisión</strong></p>
+        <p class="desc">Vivienda unifamiliar con integración interior-exterior y criterios de eficiencia.</p>
+        <div class="cta-row">
+          <button class="btn-galeria" data-open="a">
+            Ver galería
+            <span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </article>
+
+    <!-- Proyecto 2 -->
+    <article class="proyecto-card" data-category="comercial" data-aos="fade-up">
+      <figure class="thumb">
+        <img src="img/AdobeStock_1136742804.jpeg"
+             alt="Fachada centro corporativo Altavista"
+             loading="lazy" width="1200" height="800">
+      </figure>
+      <div class="meta">
+        <h3 id="g2-title">Centro Corporativo Altavista</h3>
+        <p class="meta-line">2022 · Escazú · <strong>Consultoría técnica</strong></p>
+        <p class="desc">Edificio de oficinas con fachada de vidrio y criterios bioclimáticos.</p>
+        <div class="cta-row">
+          <button class="btn-galeria" data-open="a">
+            Ver galería
+            <span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </article>
+
+    <!-- Proyecto 3 -->
+    <article class="proyecto-card" data-category="remodelacion" data-aos="fade-up">
+      <figure class="thumb">
+        <img src="img/AdobeStock_385910099.jpeg"
+             alt="Interior remodelado Casa M"
+             loading="lazy" width="1200" height="800">
+      </figure>
+      <div class="meta">
+        <h3 id="g3-title">Remodelación Casa M</h3>
+        <p class="meta-line">2021 · Curridabat · <strong>Remodelación interior</strong></p>
+        <p class="desc">Intervención integral con optimización de iluminación natural y acabados contemporáneos.</p>
+        <div class="cta-row">
+          <button class="btn-galeria" data-open="a">
+            Ver galería
+            <span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+
+<!-- Modal Lightbox reutilizable -->
+<div id="modal-galeria" class="modal" aria-hidden="true" role="dialog" aria-labelledby="modal-title">
+  <div class="modal-backdrop" data-close></div>
+  <div class="modal-content" role="document">
+    <button class="modal-close" data-close aria-label="Cerrar galería">&times;</button>
+    <h3 id="modal-title" class="modal-title">Galería</h3>
+
+    <div class="modal-carousel" id="carousel" aria-live="polite"></div>
+
+    <div class="modal-controls">
+      <button id="prev" class="modal-btn" aria-label="Anterior" type="button">‹</button>
+      <button id="next" class="modal-btn" aria-label="Siguiente" type="button">›</button>
+    </div>
+
+    <div class="modal-footer">
+      <a id="modal-detalle" class="btn-outline" href="#">Ver proyecto</a>
+      <a href="/contacto" class="btn">Contactar</a>
+    </div>
+  </div>
+</div>
+<!-- FIN HTML Galería -->
+
+
+
+<section id="servicios">
+    <div class="section-line"></div>
+
+    <div class="section-block">
+        <h2 class="titulo-arquitectonico">SERVICIOS</h2>
+    </div>
+
+    <div class="row g-4">
+
+        <!-- DISEÑO -->
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="0">
+            <div class="card h-100 p-3 servicio-card">
+                <h3 class="h5">Diseño</h3>
+                <p>Propuestas funcionales, estéticas y adaptadas al contexto costarricense.</p>
+            </div>
+        </div>
+
+        <!-- CONSULTORÍA -->
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+            <div class="card h-100 p-3 servicio-card">
+                <h3 class="h5">Consultoría</h3>
+                <p>Asesoría técnica, normativa y de optimización de espacios.</p>
+            </div>
+        </div>
+
+        <!-- SUPERVISIÓN -->
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+            <div class="card h-100 p-3 servicio-card">
+                <h3 class="h5">Supervisión</h3>
+                <p>Acompañamiento profesional para garantizar calidad y cumplimiento en obra.</p>
+            </div>
+        </div>
+
+        <!-- MODELADO 3D -->
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+            <div class="card h-100 p-3 servicio-card">
+                <h3 class="h5">Modelado 3D</h3>
+                <p>Visualizaciones tridimensionales precisas para presentación y desarrollo de proyectos.</p>
+            </div>
+        </div>
+<div class="text-center mt-4">
+    <a href="servicios.html" class="btn-galeria">
+        Ver servicios
+        <span></span>
+        <span></span>
+    </a>
+</div>
+
+    </div>
+</section>
+
+
+
+
+<!-- PORTAFOLIO -->
+<section id="destacados" class="destacados-section">
+    <h2 class="titulo-arquitectonico">PORTAFOLIO</h2>
+
+    <div class="destacados-grid">
+
+        <article class="destacado-card">
+            <figure class="destacado-img">
+                <img src="img/AdobeStock_455072179.jpeg" alt="Residenciales">
+            </figure>
+            <div class="destacado-info">
+                <h3>Residenciales</h3>
+                <p>Diseños funcionales y contemporáneos adaptados al contexto costarricense.</p>
+            </div>
+        </article>
+
+        <article class="destacado-card">
+            <figure class="destacado-img">
+                <img src="img/AdobeStock_114061971.jpeg" alt="Comerciales">
+            </figure>
+            <div class="destacado-info">
+                <h3>Comerciales</h3>
+                <p>Espacios corporativos eficientes con criterios bioclimáticos.</p>
+            </div>
+        </article>
+
+        <article class="destacado-card">
+            <figure class="destacado-img">
+               <img src="img/AdobeStock_267265137.jpeg" alt="Institucionales">
+            </figure>
+            <div class="destacado-info">
+                <h3>Institucionales</h3>
+                <p>Proyectos públicos y educativos con enfoque técnico y social.</p>
+            </div>
+        </article>
+
+    </div>
+</section>
+
+
+
+<section id="contacto">
+    <div class="container">
+
+        <h2 class="titulo-arquitectonico" data-aos="fade-up" data-aos-duration="800">
+            CONTACTO
+        </h2>
+
+        <form class="form" action="#" method="post">
+
+            <input type="text" name="nombre" placeholder="Nombre completo" required
+                   data-aos="fade-up" data-aos-delay="200">
+
+            <input type="email" name="email" placeholder="Correo electrónico" required
+                   data-aos="fade-up" data-aos-delay="250">
+
+            <input type="tel" name="telefono" placeholder="Teléfono" required
+                   data-aos="fade-up" data-aos-delay="300">
+
+            <textarea name="mensaje" placeholder="Mensaje" required
+                      data-aos="fade-up" data-aos-delay="350"></textarea>
+
+            <button type="submit" class="btn-contacto" data-aos="fade-up" data-aos-delay="450">
+                <span></span>
+                <span></span>
+                Enviar mensaje
+            </button>
+
+        </form>
+
+    </div>
+</section>
+
+
+
+
+<!-- FOOTER -->
+<footer class="footer mt-5" data-aos="fade-up">
+    <div class="container py-5">
+
+        <div class="row g-4">
+
+            <div class="col-md-4">
+                <h4 class="footer-title">Arq. José Mora Cerdas</h4>
+                <p class="footer-text">
+                    Diseño arquitectónico, supervisión y consultoría técnica con más de 10 años de experiencia en Costa Rica.
+                </p>
+            </div>
+
+            <div class="col-md-4">
+                <h4 class="footer-title">Contacto</h4>
+                <ul class="footer-list">
+                    <li>📍 San José, Escazú, San Antonio</li>
+                    <li>📧 contacto@josemora.cr</li>
+                    <li>📞 +506 8888-8888</li>
+                </ul>
+            </div>
+
+            <div class="col-md-4">
+                <h4 class="footer-title">Redes Sociales</h4>
+                <div class="footer-social">
+                    <a href="#" class="social-icon">IG</a>
+                    <a href="#" class="social-icon">FB</a>
+                    <a href="#" class="social-icon">LN</a>
+                </div>
+            </div>
+
+        </div>
+
+        <hr class="footer-divider">
+
+        <p class="footer-copy mt-3">
+            © 2026 Arq. José Mora Cerdas. Todos los derechos reservados.
+        </p>
+
+    </div>
+</footer>
+
+<!-- Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- AOS -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+<!-- Script del menú -->
+<script src="js/script.js"></script>
+
+<script>
+    AOS.init();
+</script>
+
+
+</body>
+</html>
